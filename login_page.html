@@ -78,10 +78,19 @@ input{
  
 }
 
-/* .logo{
-    height: 20px;
-    margin-right: 20px;
-} */
+
+.ORLINE{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .line{
+    flex: 1;
+    margin: 0px 20px;
+
+ }
+
     </style>
 </head>
 <body>
@@ -119,7 +128,17 @@ input{
 
      <!-- For a horizontal line -->
 
-    <hr style="margin-left: 31px;margin-right: 31px;">
+    <!-- <hr style="margin-left: 31px;margin-right: 31px;"> -->
+
+    <!-- For making OR and Horizontal line -->
+
+    <div class="ORLINE">
+        <div class="line"><hr></div>
+        <div>OR</div>
+        <div class="line"><hr></div>
+    </div>
+
+
      <button class="btn-google">Continue with Google</button><br>
      <button class="btn-E-email">Your enterprise email [SSO]</button><br><br>
     <hr style="margin-left: 31px;margin-right: 31px;">
