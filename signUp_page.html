@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login UI</title>
+<!-- <link rel="stylesheet" href="login.css"> -->
+    <style>
+ 
+ /* INTERNAL - CSS */
+
+ /* Global font - It will apply on every text */
+  *{
+       font-family: sans-serif;
+    }
+
+ /* Outer box - like a nested layout */
+   .main-div{  
+    display: flex;
+    height:100vh;
+    background-color: rgb(140, 135, 135);
+    justify-content: center;
+    align-items: center; 
+    }
+
+/* mid box */
+   .mid-div{
+    width:380px;
+    background-color: #2F3343;
+    color:white;
+    border-radius: 8px;
+    height:670px;
+    }
+
+/* for email & pass input */
+input{
+    background-color:#393B54;
+    width: 320px;
+    height:25px;
+    border: 1px solid rgb(111, 132, 153);
+    border-radius: 6px;
+    margin-left: 30px;
+}
+
+/* design for button */
+.btn-cls{
+    color:white;
+    background-color: rgb(58, 58, 185);
+    width: 325px;
+    height:35px;
+    border-radius: 18px;
+    border: 1px solid rgb(58, 58, 185);
+    margin-left: 30px;
+}
+
+.instructions{
+  margin-left: 32px;
+}
+
+
+/* design for google account (icons left) */
+.btn-google{
+    background-color:#393B54;
+    width: 320px;
+    height:32px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border: 1px solid rgb(111, 132, 153);
+    border-radius: 5px;
+    color:white;
+}
+
+/* design for google account (icons left and arrow left) */
+.btn-E-email{
+    background-color:#393B54;
+    width:320px;
+    height:30px;
+    margin-left: 30px;
+    margin-top: 25px;
+    border: 1px solid rgb(111, 132, 153);
+    border-radius: 5px;
+    color:white;
+ 
+}
+
+    </style>
+</head>
+<body>
+    <!-- outer - box -->
+    <div class="main-div"> 
+  
+    <!-- 1st div for heading text with Inline CSS-->
+
+    <div class="mid-div">
+        <div style="background-color: #393B54;
+        font-size: 17px;
+        padding-top: 5px;padding-left: 40px;
+        padding-bottom: 0.1px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;">
+         <p><strong>&#10024 Create an account</strong></p>
+    </div>
+        
+     <!-- 2nd div with Inline CSS -->
+
+    <div style="padding-top: 40px;
+        font-size: 14px;">
+
+     <!-- form declaration (to collect user material)-->
+
+    <form>
+     <label style="margin-left: 30px;">Name*</label><br>
+     <input type="text" name="Email"><br><br>
+
+     <label style="margin-left: 30px;">Email address*</label><br>
+     <input type="password" name="Password"><br><br>
+
+     <label style="margin-left: 30px;">Password*</label><br>
+     <input type="password" name="Password"><br><br>
+    
+     <div class="instructions">
+        <p style="margin: 0px;">&#9989 At least 1 lowercase letter(a...z)</p><br>
+        <p style="margin: 0px;">&#9989 At least 1 Uppercase letter(A...Z)</p><br>
+        <p style="margin: 0px;">&#9989 At least 1 Number (0...9)</p><br>
+        <p style="margin: 0px;">&#10060 At least 1 special character</p><br>
+        <p style="margin: 0px;">&#10060 At least 8 character in length</p><br>
+     </div>
+
+       <!-- For a horizontal line -->
+
+    <hr style="margin-left: 31px;margin-right: 31px;">
+    <button class="btn-google">Continue with Google</button><br>
+    <button class="btn-E-email">Your enterprise email [SSO]</button><br><br>
+   <hr style="margin-left: 31px;margin-right: 31px;">
+     
+   <div>
+    <a style="  padding-left: 30px;
+    color: white;
+    display: inline;" href="#">
+    Forgot password</a>
+    <p style="display: inline;
+    margin-left: 50px;">
+    Have an account? 
+    <a style="color:rgb(52, 231, 52)" href="#">
+    Sign in</a>
+    </p>
+   </div>
+
+    </div>
+    </div>
+</div>
+</body>
+</html>
