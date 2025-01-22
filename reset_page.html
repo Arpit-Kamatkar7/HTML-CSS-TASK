@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login UI</title>
+<!-- <link rel="stylesheet" href="login.css"> -->
+    <style>
+ 
+ /* INTERNAL - CSS */
+
+ /* Global font - It will apply on every text */
+  *{
+       font-family: sans-serif;
+    }
+
+ /* Outer box - like a nested layout */
+   .main-div{  
+    display: flex;
+    height:100vh;
+    background-color: rgb(140, 135, 135);
+    justify-content: center;
+    align-items: center; 
+    }
+
+/* mid box */
+   .mid-div{
+    width:380px;
+    background-color: #2F3343;
+    color:white;
+    border-radius: 8px;
+    height:400px;
+    }
+
+/* for email & pass input */
+input{
+    background-color:#393B54;
+    width: 320px;
+    height:25px;
+    border: 1px solid rgb(111, 132, 153);
+    border-radius: 6px;
+    margin-left: 30px;
+}
+
+/* design for button */
+.btn-cls{
+    color:white;
+    background-color: rgb(58, 58, 185);
+    width: 325px;
+    height:35px;
+    border-radius: 18px;
+    border: 1px solid rgb(58, 58, 185);
+    margin-left: 30px;
+}
+
+    </style>
+</head>
+<body>
+    <!-- outer - box -->
+    <div class="main-div"> 
+  
+    <!-- 1st div for heading text with Inline CSS-->
+
+    <div class="mid-div">
+        <div style="background-color: #393B54;
+        font-size: 17px;
+        padding-top: 5px;padding-left: 40px;
+        padding-bottom: 0.1px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;">
+         <p><strong>&#x21bb  Reset your password</strong></p>
+    </div>
+        
+     <!-- 2nd div with Inline CSS -->
+
+    <div style="padding-top: 40px;
+        font-size: 14px;">
+
+     <!-- form declaration (to collect user material)-->
+
+    <form>
+     <label style="margin-left: 30px;">Email address*</label><br>
+     <input type="text" name="Email"><br><br>
+
+     <label style="margin-left: 30px;">New Password*</label><br>
+     <input type="password" name="Password"><br><br>
+     
+     <label style="margin-left: 30px;">Confirm Password*</label><br>
+     <input type="password" name="Password"><br><br><br>
+
+     <button class="btn-cls"><b>Reset my password</b></button><br><br>
+    </form>
+
+    </div>
+    </div>
+</div>
+</body>
+</html>
