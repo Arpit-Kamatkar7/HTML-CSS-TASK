@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login UI</title>
 <!-- <link rel="stylesheet" href="login.css"> -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
  
  /* INTERNAL - CSS */
@@ -23,7 +24,21 @@
     justify-content: center;
     align-items: center; 
     }
+.wrapper{
+    display: flex;
+    background-color:#393B54;
+    width: 320px;
+    height:30px;
+    border: 1px solid rgb(111, 132, 153);
+    border-radius: 6px;
+    margin-left: 30px;
+      align-items: center;
+    justify-content: space-between;
 
+}
+#eye{
+    margin-right: 8px;
+}
 /* mid box */
    .mid-div{
     width:380px;
@@ -35,13 +50,14 @@
 
 /* for email & pass input */
 input{
+    height: 25px;
+    width: 270px;
+    color: azure;
+    outline: none;
     background-color:#393B54;
-    width: 320px;
-    height:25px;
-    border: 1px solid rgb(111, 132, 153);
-    border-radius: 6px;
-    margin-left: 30px;
-}
+   border: none;
+    margin-left: 5px;    
+} 
 
 /* design for button */
 .btn-cls{
@@ -55,15 +71,26 @@ input{
 
 /* design for google account (icons left) */
 .btn-google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color:#393B54;
     width: 320px;
     height:32px;
     margin-left: 30px;
     margin-top: 20px;
+    /* margin: auto; */
     border: 1px solid rgb(111, 132, 153);
     border-radius: 5px;
     color:white;
 }
+
+.google-icon
+ {
+    height:15px;
+    width: 15px;
+    margin-right:9px;
+ }
 
 /* design for google account (icons left and arrow left) */
 .btn-E-email{
@@ -91,12 +118,6 @@ input{
 
  }
 
- .google-icon
- {
-    height:15px;
-    width: 15px;
-    margin-right:9px;
- }
     </style>
 </head>
 <body>
@@ -124,10 +145,19 @@ input{
 
     <form>
      <label style="margin-left: 30px;">Email address*</label><br>
+     <div class="wrapper">
      <input type="text" name="Email"><br><br>
-
+    </div>
+    <br>
      <label style="margin-left: 30px;">Password*</label><br>
-     <input type="password" name="Password"><br><br><br>
+     
+     <div  class="wrapper">
+        <div><input type="password" name="Password"></div>
+        
+        <div id="eye"><i class="material-icons toggle-password">visibility</i></div>
+     </div><br><br>
+    
+
 
      <button class="btn-cls"><b>Log in</b></button><br><br>
     </form>
